@@ -1,8 +1,11 @@
 $(document).ready(function(e){
-//Animate courasel
-var $myCarousel = $('#carouselExampleIndicators');
 
-// Initialize carousel
-$myCarousel.carousel();
+    //Carousel interval setup
+    $('.carousel').carousel({
+        interval: 6000,
+        keyboard: true,
+        pause: hover,
+        wrap: true
+    });
 
 });
