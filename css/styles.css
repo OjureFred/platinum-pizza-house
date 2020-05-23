@@ -1,12 +1,22 @@
 
-.carousel-caption h3:first-child {
-  animation-delay: 1s;
+.slider-block{
+	height:350px;
+	display:inline-block;
+}
+.carousel {
+	height:100%;
+}
+.carousel .carousel-inner{
+  height:100%;
+  background-color: aquamarine;
+  text-align: center;
 }
 
-.carousel-caption h3:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.carousel-caption button {
-  animation-delay: 3s;
+.carousel .item{
+	background-repeat:no-repeat;
+	background-size:cover;
+  background-position:center center;
+  background-color: aqua;
+	width:100%;
+	height:100%;
 }
