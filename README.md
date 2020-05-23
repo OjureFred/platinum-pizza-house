@@ -12,7 +12,7 @@ To start using this project use the following commands:
 - `code .` [//]: # (this is if Visual Studio Code is your preferred text editor)
 - you can also open with any normal text editor
 
-##Technology used
+## Technology used
 - HTML
 - CSS
 - JQuery
