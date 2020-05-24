@@ -59,7 +59,35 @@
               <span class="sr-only">Next</span>
             </a>
           </div>
+
+          <!-----------------------USER SELECTION OF PIZZA AND OPTIONS-------------------------->
+          <div class="container">
+          <h3 class="center">Select your Pizza Here</h3>
+          <form class="form" action="/action_page.php">
+            <div class="form-group form-group-lg">
+              <label for="select1">Select the size:</label>
+              <select class="form-control form-control-lg" id="sel1">
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+              </select>
+            </div> 
+            <div class="form-group">
+              <label for="select1">And the pizza:</label>
+              <select class="form-control form-control-lg" id="sel2">
+                <option>Hawaian</option>
+                <option>Peperoni</option>
+                <option>Chicken Tika</option>
+                <option>Barbeque</option>
+                <option>Boewors</option>
+                <option>Chicken and Cheese</option>
+              </select>
+            </div> 
+            
+            <button type="submit" class="btn btn-default">Place order</button>
+          </form> 
         
         <script src="" async defer></script>
+        </div>
     </body>
 </html>
