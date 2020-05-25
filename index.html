@@ -65,7 +65,8 @@
           <h3 class="center">Select your Pizza Here</h3>
 
           <form class="form" action="/action_page.php">
-                          
+             
+            <!---------Size of pizza-------->
               <div class="form-group">
                 <div class="col-sm-6">
 
@@ -91,7 +92,7 @@
                     </div>
                     </div>
                  
-            
+            <!--------------Choose the pizza--------------->
 
             <div class="form-group">
               <label for="select1">And the pizza:</label>
@@ -104,6 +105,36 @@
                 <option>Chicken and Cheese</option>
               </select>
             </div> 
+
+            <!-------------------Add the crust------------->
+
+            <div class="form-group">
+              <div class="col-sm-6">
+
+                  <label for="input-type">Add the crust :</label>
+
+                  <div id="input-type" class="row">
+                      <div class="col-sm-4">
+                          <label class="radio-inline">
+                              <input name="account_type" id="input-type-student" value="Student" type="radio" />Crispy
+                          </label>
+                      </div>
+                      <div class="col-sm-4">
+                          <label class="radio-inline">
+                              <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Stuffed
+                          </label>
+                      </div>
+                      <div class="col-sm-4">
+                        <label class="radio-inline">
+                            <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Gluten Free
+                        </label>
+                    </div>
+                 
+                  </div>
+                  </div>
+                  <!-----------Add toppings---------->
+
+
             
             <button type="submit" class="btn btn-default">Place order</button>
           </form> 
