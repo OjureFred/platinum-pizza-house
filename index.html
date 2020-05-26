@@ -143,6 +143,28 @@
             <ul id="basketContents"></ul>
             <p><strong id="basketTotal"></strong></p>
           </div>
-        
+          <!-------------------Pop Up Form for Delivery information--------------->
+          <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Delivery Address</h1>
+          
+              <label for="House Number"><b>House Number</b></label>
+              <input type="text" placeholder="Enter House Number" name="houseNumber" required>
+          
+              <label for="Street"><b>Street</b></label>
+              <input type="text" placeholder="Enter Street name" name="street" required>
+
+              <label for="Estate"><b>Estate</b></label>
+              <input type="text" placeholder="Enter your Estate" name="estate" required>
+
+              <label for="phoneNo"><b>Phone Number</b></label>
+              <input type="text" placeholder="Enter Street name" name="street" required>
+          
+              <button type="submit" class="btn">Print Delivery</button>
+              <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div> 
+          <footer>&copy; Copyright 2020 Fredrick Ojure - Moringa School</footer>
+
     </body>
 </html>
