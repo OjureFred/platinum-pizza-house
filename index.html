@@ -14,7 +14,6 @@
         <link  href="css/styles.css" rel="stylesheet" type="text/css">
         <script src="js/jquery-3.5.0.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/jquery-mailchimp.min.js"></script>
         <script src="js/script.js"></script>
     </head>
     <body>
@@ -64,7 +63,7 @@
           <div class="container">
           <h3 class="center">Select your Pizza Here</h3>
 
-          <form class="form" action="/action_page.php">
+          <form class="form" id="orderForm" >
              
             <!---------Size of pizza-------->
               <div class="form-group">
@@ -75,28 +74,28 @@
                     <div id="input-type" class="row">
                         <div class="col-sm-4">
                             <label class="radio-inline">
-                                <input name="account_type" id="input-type-student" value="Student" type="radio" />Small
+                                <input name="pizzaSize" id="small" value="small" type="radio" />Small
                             </label>
                         </div>
                         <div class="col-sm-4">
                             <label class="radio-inline">
-                                <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Medium
+                                <input name="pizzaSize" id="medium" value="medium" type="radio" />Medium
                             </label>
                         </div>
                         <div class="col-sm-4">
                           <label class="radio-inline">
-                              <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Large
+                              <input name="pizzaSize" id="large" value="large" type="radio" />Large
                           </label>
                       </div>
                    
                     </div>
                     </div>
                  
-            <!--------------Choose the Topping--------------->
+            <!--------------Choose the Type of Pizza--------------->
 
             <div class="form-group">
               <label for="select1">And the pizza:</label>
-              <select class="form-control form-control-lg" id="sel2">
+              <select id="pizzaName" class="form-control form-control-lg" id="sel2">
                 <option>Hawaian</option>
                 <option>Peperoni</option>
                 <option>Chicken Tika</option>
@@ -116,17 +115,17 @@
                   <div id="input-type" class="row">
                       <div class="col-sm-4">
                           <label class="radio-inline">
-                              <input name="account_type" id="input-type-student" value="Student" type="radio" />Crispy
+                              <input name="pizzaCrust" id="input-type-student" value="crispy" type="radio" />Crispy
                           </label>
                       </div>
                       <div class="col-sm-4">
                           <label class="radio-inline">
-                              <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Stuffed
+                              <input name="pizzaCrust" id="input-type-tutor" value="stuffed" type="radio" />Stuffed
                           </label>
                       </div>
                       <div class="col-sm-4">
                         <label class="radio-inline">
-                            <input name="account_type" id="input-type-tutor" value="Tutor" type="radio" />Gluten Free
+                            <input name="pizzaCrust" id="input-type-tutor" value="gluten" type="radio" />Gluten Free
                         </label>
                     </div>
                  
@@ -135,10 +134,9 @@
                  
 
             <br/>
-            <button type="submit" class="btn btn-success">Place your order</button>
+            <button type="submit" id="orderButton" class="btn btn-success">Place your order</button>
           </form> 
-        
-        <script src="" async defer></script>
+              
         </div>
     </body>
 </html>
