@@ -8,7 +8,7 @@
 }
 .carousel .carousel-inner{
   height:200px;
-  background-color: aquamarine;
+  background-color: lightgreen;
   text-align: center;
 }
 
@@ -16,13 +16,13 @@
 	background-repeat:no-repeat;
 	background-size:cover;
   background-position:center center;
-  background-color: aqua;
+  background-color: lightgreen;
 	width:100%;
 	
 }
 .form-group {
 	border-radius: 25px;
-	border: 2px solid green ;
+	border: 2px solid lightgreen ;
 	padding: 20px;
 }
 input[type="radio"] {

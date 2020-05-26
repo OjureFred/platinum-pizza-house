@@ -2,9 +2,8 @@
 var orderBasket = [];
 
 // order object
-function pizzaOrder(size, name, crust, topping) {
+function pizzaOrder(size, crust, topping) {
     this.size = size;
-    this.name = name;
     this.crust = crust;
     this.topping = topping;
     this.price = 0;
@@ -46,13 +45,21 @@ $(document).ready(function (e) {
     $("#orderButton").click(function (event) {
         event.preventDefault();
         var pizzaSize = $("input[name='pizzaSize']:checked").val();
-        var pizzaName = $("#pizzaName").children("option:selected").val();
+        var pizzaTopping = $("#pizzaName").children("option:selected").val();
         var pizzaCrust = $("input[name='pizzaCrust']:checked").val();
-        console.log(pizzaSize, pizzaName, pizzaCrust);
+        console.log(pizzaSize, pizzaTopping, pizzaCrust);
+        var order = new pizzaOrder(pizzaSize, pizzaCrust, pizzaTopping);
+        order.calculateCost();
+        console.log(order);
+        
+        
     });
 
     //create order
+    
+    
 
     //show order cost
+    
 
 });
