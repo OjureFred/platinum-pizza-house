@@ -48,18 +48,21 @@ $(document).ready(function (e) {
         var pizzaTopping = $("#pizzaName").children("option:selected").val();
         var pizzaCrust = $("input[name='pizzaCrust']:checked").val();
         console.log(pizzaSize, pizzaTopping, pizzaCrust);
+        //create order
         var order = new pizzaOrder(pizzaSize, pizzaCrust, pizzaTopping);
         order.calculateCost();
+        //show order
         console.log(order);
-        
+        var orderString = "<strong> Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/=</strong>"
+        console.log(orderString)
+        document.getElementById('orderList').innerHTML = orderString;
+        orderBasket.push(order);
+        console.log(orderBasket);
+     
         
     });
 
-    //create order
     
-    
-
-    //show order cost
     
 
 });
