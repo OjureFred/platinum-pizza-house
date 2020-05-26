@@ -55,15 +55,19 @@ $(document).ready(function (e) {
         //show order
         console.log(order);
         var orderString = "Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/="
+        var basketSum = "Basket Total: " + basketTotal;
         console.log(orderString)
         document.getElementById('orderList').innerHTML = orderString;
+        document.getElementById('basketTotal').innerHTML = basketSum;
         orderBasket.push(orderString);
         console.log(orderBasket);
         //print out shopping basket
         console.log(basketTotal);
+        document.getElementById('basketContents').innerHTML = " ";
 
-        for (order in orderBasket) {
-            
+        for (var i = 0; i < orderBasket.length; i++) {
+            orderLi = "<li>" + orderBasket[i] + "</li>";
+            document.getElementById('basketContents').innerHTML += orderLi;
         }
      
         
