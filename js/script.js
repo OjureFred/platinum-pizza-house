@@ -1,5 +1,6 @@
 //Basket to contain orders
 var orderBasket = [];
+var basketTotal = 0;
 
 // order object
 function pizzaOrder(size, crust, topping) {
@@ -50,6 +51,7 @@ $(document).ready(function (e) {
         //create order
         var order = new pizzaOrder(pizzaSize, pizzaCrust, pizzaTopping);
         order.calculateCost();
+        basketTotal += order.price;
         //show order
         console.log(order);
         var orderString = "Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/="
@@ -58,7 +60,8 @@ $(document).ready(function (e) {
         orderBasket.push(orderString);
         console.log(orderBasket);
         //print out shopping basket
-        
+        console.log(basketTotal);
+
         for (order in orderBasket) {
             
         }
