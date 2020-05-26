@@ -52,11 +52,16 @@ $(document).ready(function (e) {
         order.calculateCost();
         //show order
         console.log(order);
-        var orderString = "<strong> Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/=</strong>"
+        var orderString = "Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/="
         console.log(orderString)
         document.getElementById('orderList').innerHTML = orderString;
-        orderBasket.push(order);
+        orderBasket.push(orderString);
         console.log(orderBasket);
+        //print out shopping basket
+        
+        for (order in orderBasket) {
+            
+        }
      
         
     });
