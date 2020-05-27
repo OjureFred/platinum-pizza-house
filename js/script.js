@@ -47,22 +47,21 @@ $(document).ready(function (e) {
         var pizzaSize = $("input[name='pizzaSize']:checked").val();
         var pizzaTopping = $("#pizzaName").children("option:selected").val();
         var pizzaCrust = $("input[name='pizzaCrust']:checked").val();
-        console.log(pizzaSize, pizzaTopping, pizzaCrust);
+        
         //create order
         var order = new pizzaOrder(pizzaSize, pizzaCrust, pizzaTopping);
         order.calculateCost();
         basketTotal += order.price;
         //show order
-        console.log(order);
+        
         var orderString = "Topping: " + order.topping + "; Size: " + order.size + "; Crust: " + order.crust + "; Price: " + order.price + "/="
         var basketSum = "Basket Total: " + basketTotal;
-        console.log(orderString)
+        
         document.getElementById('orderList').innerHTML = orderString;
         document.getElementById('basketTotal').innerHTML = basketSum;
         orderBasket.push(orderString);
-        console.log(orderBasket);
         //print out shopping basket
-        console.log(basketTotal);
+        
         document.getElementById('basketContents').innerHTML = " ";
 
         for (var i = 0; i < orderBasket.length; i++) {
@@ -72,6 +71,7 @@ $(document).ready(function (e) {
      
         
     });
+    //Code for delivery options
 
     
     
