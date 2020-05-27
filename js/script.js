@@ -96,6 +96,10 @@ $(document).ready(function (e) {
         document.getElementById('basketContents').innerHTML = " ";
     });
 
-    
+    $("#printButton").click(function (event) {
+        event.preventDefault();
+        alert("Thank you for patronizing Platinum Pizza. Your order will be delivered to your house in 1 hour");
+
+    });
 
 });
