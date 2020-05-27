@@ -68,12 +68,21 @@ $(document).ready(function (e) {
             orderLi = "<li>" + orderBasket[i] + "</li>";
             document.getElementById('basketContents').innerHTML += orderLi;
         }
-     
-        
+            
     });
-    //Code for delivery options
+    //Code for inhouse option
+    $("#inhouseDelivery").click(function (event) {
+        event.preventDefault();
+        alert("Thank you for patronizing Platinum Pizza. Your order will be delivered to your table within 15 minutes");
+        //Clear global variables
+        orderBasket = [];
+        basketTotal = 0;
+        //Clear form
+        document.getElementById('orderList').innerHTML = " ";
+        document.getElementById('basketTotal').innerHTML = " ";
+        document.getElementById('basketContents').innerHTML = " ";
+    });
 
-    
     
 
 });
