@@ -83,6 +83,19 @@ $(document).ready(function (e) {
         document.getElementById('basketContents').innerHTML = " ";
     });
 
+    $("#homeDelivery").click(function (event) {
+        event.preventDefault();
+        //show the pop up form
+        document.getElementById("myForm").style.display = "block";
+        //Clear global variables
+        orderBasket = [];
+        basketTotal = 0;
+        //Clear form
+        document.getElementById('orderList').innerHTML = " ";
+        document.getElementById('basketTotal').innerHTML = " ";
+        document.getElementById('basketContents').innerHTML = " ";
+    });
+
     
 
 });
